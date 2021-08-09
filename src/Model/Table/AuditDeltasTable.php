@@ -9,9 +9,7 @@ use Cake\ORM\Table;
  * AuditDeltas Model
  *
  * @package AuditLog\Model\Table
- *
  * @property \AuditLog\Model\Table\AuditsTable&\Cake\ORM\Association\BelongsTo $Audits
- *
  * @method \AuditLog\Model\Entity\AuditDelta get($primaryKey, $options = [])
  * @method \AuditLog\Model\Entity\AuditDelta newEntity($data = null, array $options = [])
  * @method \AuditLog\Model\Entity\AuditDelta[] newEntities(array $data, array $options = [])
@@ -20,7 +18,6 @@ use Cake\ORM\Table;
  * @method \AuditLog\Model\Entity\AuditDelta patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \AuditLog\Model\Entity\AuditDelta[] patchEntities($entities, array $data, array $options = [])
  * @method \AuditLog\Model\Entity\AuditDelta findOrCreate($search, callable $callback = null, $options = [])
- *
  * @mixin \Cake\ORM\Behavior\CounterCacheBehavior
  */
 class AuditDeltasTable extends Table

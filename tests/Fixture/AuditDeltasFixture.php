@@ -6,7 +6,6 @@ use Cake\TestSuite\Fixture\TestFixture;
 
 /**
  * AuditDeltasFixture
- *
  */
 class AuditDeltasFixture extends TestFixture
 {

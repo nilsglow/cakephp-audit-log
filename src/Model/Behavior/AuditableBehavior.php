@@ -279,7 +279,6 @@ class AuditableBehavior extends Behavior
      * Should a model event be processed by AuditLog ?
      *
      * @param string $event Event
-     *
      * @return bool
      */
     protected function _shouldProcess($event)

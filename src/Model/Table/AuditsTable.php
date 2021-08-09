@@ -9,9 +9,7 @@ use Cake\ORM\Table;
  * Audits Model
  *
  * @package AuditLog\Model\Table
- *
  * @property \AuditLog\Model\Table\AuditDeltasTable&\Cake\ORM\Association\HasMany $AuditDeltas
- *
  * @method \AuditLog\Model\Entity\Audit get($primaryKey, $options = [])
  * @method \AuditLog\Model\Entity\Audit newEntity($data = null, array $options = [])
  * @method \AuditLog\Model\Entity\Audit[] newEntities(array $data, array $options = [])
@@ -20,7 +18,6 @@ use Cake\ORM\Table;
  * @method \AuditLog\Model\Entity\Audit patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \AuditLog\Model\Entity\Audit[] patchEntities($entities, array $data, array $options = [])
  * @method \AuditLog\Model\Entity\Audit findOrCreate($search, callable $callback = null, $options = [])
- *
  * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class AuditsTable extends Table
