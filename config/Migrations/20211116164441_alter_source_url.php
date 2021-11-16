@@ -20,6 +20,6 @@ class AlterSourceUrl extends AbstractMigration
             'limit' => 255,
             'null' => true,
         ]);
-        $table->create();
+        $table->save();
     }
 }
