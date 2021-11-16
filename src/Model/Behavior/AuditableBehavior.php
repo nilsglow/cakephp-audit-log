@@ -79,7 +79,7 @@ class AuditableBehavior extends Behavior
      * @param Event $event Event
      * @param Entity $entity Entity to save
      *
-     * @return null
+     * @return void
      */
     public function beforeSave(Event $event, Entity $entity)
     {
@@ -99,7 +99,7 @@ class AuditableBehavior extends Behavior
      * @param Event $event Event
      * @param Entity $entity Entity to save
      *
-     * @return  null
+     * @return void
      */
     public function beforeDelete(Event $event, Entity $entity)
     {
@@ -118,7 +118,7 @@ class AuditableBehavior extends Behavior
      * @param Event $event Event
      * @param Entity $entity Entity to save
      *
-     * @return  void
+     * @return void
      */
     public function afterSave(Event $event, Entity $entity)
     {
@@ -240,7 +240,7 @@ class AuditableBehavior extends Behavior
      * @param Event $event Event
      * @param Entity $entity Entity to save
      *
-     * @return  null
+     * @return void
      */
     public function afterDelete(Event $event, Entity $entity)
     {
@@ -326,7 +326,8 @@ class AuditableBehavior extends Behavior
      * Additionally, for the HABTM data, all we care about is the IDs,
      * so the data will be reduced to an indexed array of those IDs.
      *
-     * @return  array
+     * @param \Cake\ORM\Entity $entity The entity object
+     * @return array
      */
     protected function _getModelData(Entity $entity)
     {
